@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         SONARQUBE = 'sonar' // Nom de ton outil SonarQube
-        SONARQUBE_TOKEN = credentials('springboot') // Credentials Jenkins pour le token SonarQube
+        SONARQUBE_TOKEN = credentials('jenkins-token') // Credentials Jenkins pour le token SonarQube
         DOCKER_IMAGE = 'spring_boot_project' // Nom de ton image Docker
     }
 
